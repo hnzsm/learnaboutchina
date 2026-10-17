@@ -1,7 +1,7 @@
 # Cloudflare Pages header rules.
 #
 # Keep the *.pages.dev deployment host out of search results — the canonical
-# host is learnaboutchina.org, declared by rel=canonical on every page, so the
+# host is www.learnaboutchina.org, declared by rel=canonical on every page, so the
 # pages.dev copy must not be indexed as a duplicate.
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
