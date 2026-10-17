@@ -1,0 +1,4 @@
+# Files that must not be uploaded to Cloudflare Pages.
+# .trae/ holds local tooling notes, not website assets.
+.trae
+.git

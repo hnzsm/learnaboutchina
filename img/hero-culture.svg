@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="hcbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#251318"/><stop offset="100%" stop-color="#100a0c"/>
+    </linearGradient>
+    <pattern id="hcgrid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0 H0 V46" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <pattern id="hcdots" width="15" height="15" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.1" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <pattern id="hccloud" width="140" height="140" patternUnits="userSpaceOnUse">
+      <path d="M30 60c0-9 7-16 16-16 3-7 10-12 18-12 11 0 20 8 21 18 8 1 14 8 14 16 0 9-8 16-17 16H46c-9 0-16-7-16-16z" fill="none" stroke="#c9a227" stroke-opacity="0.09" stroke-width="1.4"/>
+    </pattern>
+    <pattern id="hckeyset" width="40" height="34" patternUnits="userSpaceOnUse">
+      <path d="M0 10h12V4h16v6h12M0 24h12v6h16v-6h12" fill="none" stroke="#c9a227" stroke-opacity="0.18" stroke-width="1.6"/>
+    </pattern>
+    <radialGradient id="hcglow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c1272d" stop-opacity="0.30"/><stop offset="100%" stop-color="#c1272d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hcglow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c9a227" stop-opacity="0.20"/><stop offset="100%" stop-color="#c9a227" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hcfocus" cx="50%" cy="45%" r="72%">
+      <stop offset="0%" stop-color="#0b0709" stop-opacity="0"/><stop offset="72%" stop-color="#0b0709" stop-opacity="0.45"/><stop offset="100%" stop-color="#0b0709" stop-opacity="0.85"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#hcbg)"/>
+  <rect width="1600" height="900" fill="url(#hcgrid)"/>
+  <rect width="1600" height="900" fill="url(#hcdots)"/>
+  <rect width="1600" height="900" fill="url(#hccloud)"/>
+  <ellipse cx="330" cy="230" rx="430" ry="310" fill="url(#hcglow1)"/>
+  <ellipse cx="1290" cy="660" rx="490" ry="340" fill="url(#hcglow2)"/>
+  <g opacity="0.55">
+    <circle cx="1290" cy="290" r="150" fill="none" stroke="#c1272d" stroke-width="1.2" stroke-opacity="0.5"/>
+    <circle cx="1290" cy="290" r="108" fill="none" stroke="#c1272d" stroke-width="1" stroke-opacity="0.34"/>
+    <circle cx="1290" cy="290" r="66" fill="none" stroke="#c1272d" stroke-width="1" stroke-opacity="0.24"/>
+  </g>
+  <g opacity="0.5">
+    <circle cx="250" cy="700" r="120" fill="none" stroke="#c9a227" stroke-width="1.2" stroke-opacity="0.32"/>
+    <circle cx="250" cy="700" r="78" fill="none" stroke="#c9a227" stroke-width="1" stroke-opacity="0.22"/>
+  </g>
+  <rect x="0" y="806" width="1600" height="34" fill="url(#hckeyset)"/>
+  <rect x="0" y="60" width="1600" height="34" fill="url(#hckeyset)" opacity="0.55"/>
+  <rect width="1600" height="900" fill="url(#hcfocus)"/>
+</svg>
