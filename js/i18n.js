@@ -33,7 +33,7 @@
 
   /* Translation units. Mirrors the extractor used to build the dictionaries. */
   var SELECTOR = "h1,h2,h3,h4,h5,h6,p,li,blockquote,figcaption,summary,td,th,dt,dd," +
-    "span.card-tag,div.feature-label,div.section-label,div.hero-tag," +
+    "span.card-tag,span.footer-contact-label,div.feature-label,div.section-label,div.hero-tag," +
     "div.stat-label,div.breadcrumb,div.hero-scroll,div.footer-bottom," +
     "a.card-link,a.btn";
 
