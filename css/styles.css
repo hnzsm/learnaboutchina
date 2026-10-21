@@ -1086,6 +1086,236 @@ html[dir="rtl"] .place-slide li::before { left: auto; right: 0; }
   .debate-side { padding: 16px; }
 }
 
+/* ===== HISTORY TIMELINE (history.html) ===== */
+.history-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.9fr);
+  gap: 34px;
+  align-items: start;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.history-visual { min-width: 0; }
+.history-map-frame { background: #0b0d13; }
+
+/* era name + dates sit in a dark bar above the map so they never cover it */
+.history-map-head {
+  position: relative;
+  height: 62px;
+  background: linear-gradient(90deg, rgba(193, 39, 45, 0.22), rgba(11, 13, 19, 0));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.era-map-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 20px;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.35s, transform 0.35s;
+  pointer-events: none;
+}
+.era-map-label.active { opacity: 1; transform: none; }
+.era-map-label .feature-label {
+  margin: 0;
+  color: var(--gold);
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+}
+.era-map-label .stat-label {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  opacity: 1;
+}
+
+/* dynasty footprints fade in over the modern silhouette */
+.era-territory {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.45s ease, visibility 0.45s;
+}
+.era-territory.active { opacity: 1; visibility: visible; }
+.era-territory .era-shape {
+  fill: rgba(212, 160, 23, 0.32);
+  stroke: #f0c75e;
+  stroke-width: 1.3;
+  stroke-linejoin: round;
+}
+.era-territory .era-shape-modern {
+  fill: rgba(193, 39, 45, 0.3);
+  stroke: rgba(240, 199, 94, 0.55);
+  stroke-width: 0.8;
+}
+
+/* --- slider --- */
+.timeline { margin-top: 18px; }
+.timeline-range {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 24px;
+  background: transparent;
+  cursor: pointer;
+}
+.timeline-range:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 6px;
+  border-radius: 4px;
+}
+.timeline-range::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--red));
+}
+.timeline-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  margin-top: -8px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--red);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.timeline-range::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--red));
+}
+.timeline-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--red);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.timeline-caps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+.timeline-caps .stat-label {
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  color: var(--muted);
+  opacity: 1;
+}
+.timeline-ticks {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+.timeline-ticks li { flex: 1; min-width: 0; }
+.era-tick {
+  width: 100%;
+  padding: 8px 2px 4px;
+  border: 0;
+  border-top: 2px solid var(--line);
+  background: none;
+  font: inherit;
+  font-size: 0.72rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+.era-tick:hover,
+.era-tick:focus-visible { color: var(--ink); border-color: var(--gold); }
+.era-tick.active {
+  color: var(--red);
+  font-weight: 700;
+  border-color: var(--red);
+}
+
+/* --- content cards --- */
+.history-cards { min-width: 0; }
+.era-card {
+  display: none;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.era-card.active { display: block; animation: eraCardIn 0.45s cubic-bezier(0.4, 0, 0.2, 1); }
+@keyframes eraCardIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+.era-card-img {
+  height: 210px;
+  background-size: cover;
+  background-position: center;
+}
+.era-card-body { padding: 24px 26px 26px; }
+.era-card-body .feature-label { margin-bottom: 10px; }
+.era-card-body h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.era-card-body .era-meta {
+  font-size: 0.82rem;
+  letter-spacing: 0.4px;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+.era-card-body p { color: var(--ink-light); font-size: 0.95rem; }
+.era-card-body ul { list-style: none; padding: 0; margin-top: 16px; }
+.era-card-body li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 8px;
+  color: var(--ink-light);
+  font-size: 0.92rem;
+}
+.era-card-body li::before {
+  content: "◆";
+  color: var(--red);
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  font-size: 0.7rem;
+}
+.history-note {
+  margin-top: 14px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Right-to-left layout (Arabic) */
+html[dir="rtl"] .era-card-body li { padding-left: 0; padding-right: 24px; }
+html[dir="rtl"] .era-card-body li::before { left: auto; right: 0; }
+
+@media (max-width: 900px) {
+  .history-stage { grid-template-columns: 1fr; gap: 26px; }
+  .era-card-img { height: 200px; }
+}
+@media (max-width: 560px) {
+  .history-map-head { height: 54px; }
+  .era-map-label { padding: 0 14px; }
+  .era-map-label .feature-label { font-size: 0.8rem; letter-spacing: 2px; }
+  .era-map-label .stat-label { font-size: 0.74rem; }
+  .timeline-ticks { overflow-x: auto; }
+  .timeline-ticks li { flex: 0 0 58px; }
+  .era-tick { font-size: 0.68rem; }
+  .era-card-img { height: 180px; }
+  .era-card-body { padding: 20px; }
+  .era-card-body h3 { font-size: 1.3rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .era-territory,
+  .era-map-label,
+  .era-card.active { transition: none; animation: none; }
+}
+
 /* ===== 404 (404.html) ===== */
 .err-panel {
   max-width: 660px;
