@@ -807,8 +807,27 @@ html[dir="rtl"] .pillar { direction: rtl; }
   stroke: #fff;
   stroke-width: 2.2;
 }
-/* Region blocks carry no on-map label: the map stays clean and the cuisine
-   name is read from the card below, revealed as soon as a block is opened. */
+/* Region blocks carry their province name on the map, revealed on hover and
+   kept up while the block is open. */
+.map-region .region-name {
+  fill: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-anchor: middle;
+  direction: ltr;
+  opacity: 0;
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: #0b0d13;
+  stroke-width: 3.5;
+  stroke-opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.map-region .region-name[font-size="12"] { font-size: 12px; }
+.map-region .region-name[font-size="10"] { font-size: 11px; }
+.map-region:hover .region-name,
+.map-region:focus-visible .region-name,
+.map-region.active .region-name { opacity: 1; }
 .map-marker { cursor: pointer; outline: none; }
 .map-marker .marker-dot {
   fill: #ff8a92;
@@ -1007,6 +1026,9 @@ html[dir="rtl"] .place-slide li::before { left: auto; right: 0; }
     transform: scale(1.6);
   }
   .map-marker .marker-name { font-size: 20px; stroke-width: 5; }
+  .map-region .region-name { font-size: 20px; stroke-width: 5; }
+  .map-region .region-name[font-size="12"] { font-size: 15px; }
+  .map-region .region-name[font-size="10"] { font-size: 14px; }
 
   .place-slide { padding: 24px 20px; }
   .place-slide h3 { font-size: 1.25rem; }

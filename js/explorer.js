@@ -70,6 +70,16 @@
         rg.classList.toggle("active", rg.getAttribute("data-place") === place);
       });
 
+      /* SVG paints in document order, so the label of an earlier marker can be
+       * hidden under a later marker or region. Lift the open item to the end of
+       * its layer: its white name then sits on top of everything drawn so far. */
+      markers.forEach(function (m) {
+        if (m.classList.contains("active") && m.parentNode) m.parentNode.appendChild(m);
+      });
+      regions.forEach(function (rg) {
+        if (rg.classList.contains("active") && rg.parentNode) rg.parentNode.appendChild(rg);
+      });
+
       if (updateHash) {
         try { window.history.replaceState(null, "", "#" + place); } catch (e) {}
       }
