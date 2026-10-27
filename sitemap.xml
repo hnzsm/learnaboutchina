@@ -1,123 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.learnaboutchina.org/</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.learnaboutchina.org/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.learnaboutchina.org/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.learnaboutchina.org/?lang=zh-CN"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.learnaboutchina.org/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.learnaboutchina.org/?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.learnaboutchina.org/?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.learnaboutchina.org/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.learnaboutchina.org/?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.learnaboutchina.org/?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.learnaboutchina.org/?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.learnaboutchina.org/?lang=ar"/>
   </url>
   <url>
     <loc>https://www.learnaboutchina.org/tourism</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.learnaboutchina.org/tourism"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.learnaboutchina.org/tourism"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.learnaboutchina.org/tourism?lang=zh-CN"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.learnaboutchina.org/tourism?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.learnaboutchina.org/tourism?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.learnaboutchina.org/tourism?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.learnaboutchina.org/tourism?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.learnaboutchina.org/tourism?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.learnaboutchina.org/tourism?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.learnaboutchina.org/tourism?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.learnaboutchina.org/tourism?lang=ar"/>
   </url>
   <url>
     <loc>https://www.learnaboutchina.org/culture</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.learnaboutchina.org/culture"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.learnaboutchina.org/culture"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.learnaboutchina.org/culture?lang=zh-CN"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.learnaboutchina.org/culture?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.learnaboutchina.org/culture?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.learnaboutchina.org/culture?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.learnaboutchina.org/culture?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.learnaboutchina.org/culture?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.learnaboutchina.org/culture?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.learnaboutchina.org/culture?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.learnaboutchina.org/culture?lang=ar"/>
   </url>
   <url>
     <loc>https://www.learnaboutchina.org/history</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.learnaboutchina.org/history"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.learnaboutchina.org/history"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.learnaboutchina.org/history?lang=zh-CN"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.learnaboutchina.org/history?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.learnaboutchina.org/history?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.learnaboutchina.org/history?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.learnaboutchina.org/history?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.learnaboutchina.org/history?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.learnaboutchina.org/history?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.learnaboutchina.org/history?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.learnaboutchina.org/history?lang=ar"/>
   </url>
   <url>
     <loc>https://www.learnaboutchina.org/food</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.learnaboutchina.org/food"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.learnaboutchina.org/food"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.learnaboutchina.org/food?lang=zh-CN"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.learnaboutchina.org/food?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.learnaboutchina.org/food?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.learnaboutchina.org/food?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.learnaboutchina.org/food?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.learnaboutchina.org/food?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.learnaboutchina.org/food?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.learnaboutchina.org/food?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.learnaboutchina.org/food?lang=ar"/>
   </url>
   <url>
     <loc>https://www.learnaboutchina.org/medical</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.learnaboutchina.org/medical"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.learnaboutchina.org/medical"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.learnaboutchina.org/medical?lang=zh-CN"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.learnaboutchina.org/medical?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.learnaboutchina.org/medical?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.learnaboutchina.org/medical?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.learnaboutchina.org/medical?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.learnaboutchina.org/medical?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.learnaboutchina.org/medical?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.learnaboutchina.org/medical?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.learnaboutchina.org/medical?lang=ar"/>
   </url>
   <url>
     <loc>https://www.learnaboutchina.org/cities</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.learnaboutchina.org/cities"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.learnaboutchina.org/cities"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.learnaboutchina.org/cities?lang=zh-CN"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.learnaboutchina.org/cities?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.learnaboutchina.org/cities?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.learnaboutchina.org/cities?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.learnaboutchina.org/cities?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.learnaboutchina.org/cities?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.learnaboutchina.org/cities?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.learnaboutchina.org/cities?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.learnaboutchina.org/cities?lang=ar"/>
   </url>
 </urlset>
