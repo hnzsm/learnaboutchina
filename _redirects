@@ -1,0 +1,3 @@
+# Healthcare was taken offline: send old links to the homepage instead of a dead end.
+/medical /  301
+/medical.html /  301

@@ -11,19 +11,14 @@
   /* ---------- configuration ---------- */
   var SUPPORTED = [
     { code: "en",    label: "English",    dir: "ltr" },
-    { code: "zh-CN", label: "简体中文",    dir: "ltr" },
-    { code: "es",    label: "Español",    dir: "ltr" },
-    { code: "pt",    label: "Português",  dir: "ltr" },
-    { code: "fr",    label: "Français",   dir: "ltr" },
-    { code: "de",    label: "Deutsch",    dir: "ltr" },
-    { code: "ru",    label: "Русский",    dir: "ltr" },
-    { code: "ja",    label: "日本語",      dir: "ltr" },
-    { code: "ko",    label: "한국어",      dir: "ltr" },
-    { code: "ar",    label: "العربية",    dir: "rtl" }
+    { code: "zh-CN", label: "简体中文",    dir: "ltr" }
   ];
   var DEFAULT_LANG = "en";
   var STORE_KEY = "lac-lang";
   var BASE = "js/i18n/";
+  /* Bumped whenever the dictionaries are regenerated, so returning visitors
+   * do not keep an outdated translation cached. */
+  var BUILD = "20261116";
 
   /* User config, settable before this script loads:
    *   window.LAC_I18N_CONFIG = { geoip: true, geoipEndpoint: "..." }
@@ -109,14 +104,7 @@
    * country code -> default language. Kept behind a flag so the site makes no
    * third-party request unless the operator opts in. */
   var GEO_MAP = {
-    CN: "zh-CN", TW: "zh-CN", HK: "zh-CN", SG: "zh-CN", MO: "zh-CN",
-    ES: "es", MX: "es", AR: "es", CO: "es", CL: "es", PE: "es",
-    BR: "pt", PT: "pt", AO: "pt", MZ: "pt",
-    FR: "fr", BE: "fr", CA: "en", SN: "fr", CI: "fr",
-    DE: "de", AT: "de", CH: "de",
-    IT: "it", RU: "ru", UA: "ru", KZ: "ru", BY: "ru",
-    JP: "ja", KR: "ko", KP: "ko",
-    SA: "ar", AE: "ar", EG: "ar", MA: "ar", DZ: "ar", TN: "ar", IQ: "ar"
+    CN: "zh-CN", TW: "zh-CN", HK: "zh-CN", SG: "zh-CN", MO: "zh-CN"
   };
 
   function geoLookup(cb) {
@@ -201,7 +189,7 @@
     if (code === DEFAULT_LANG) return cb({});
     if (cache[code]) return cb(cache[code]);
     if (!window.fetch) return cb({});
-    window.fetch(BASE + code + ".json", { credentials: "omit" })
+    window.fetch(BASE + code + ".json?v=" + BUILD, { credentials: "omit" })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (d) { cache[code] = d; cb(d); })
       ["catch"](function () { cache[code] = null; cb({}); });
