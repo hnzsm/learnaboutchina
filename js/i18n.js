@@ -15,10 +15,10 @@
   ];
   var DEFAULT_LANG = "en";
   var STORE_KEY = "lac-lang";
-  var BASE = "js/i18n/";
+  var BASE = "/js/i18n/";
   /* Bumped whenever the dictionaries are regenerated, so returning visitors
    * do not keep an outdated translation cached. */
-  var BUILD = "20261116";
+  var BUILD = "20261117";
 
   /* User config, settable before this script loads:
    *   window.LAC_I18N_CONFIG = { geoip: true, geoipEndpoint: "..." }

@@ -33,7 +33,7 @@
 
   const mail =
     (link.getAttribute("href") || "").replace(/^mailto:/i, "") ||
-    "contact@learnaboutchina.org";
+    "learnaboutchinaorg@gmail.com";
 
   const MSG = {
     "en": "Copied!",
