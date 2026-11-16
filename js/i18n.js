@@ -11,14 +11,22 @@
   /* ---------- configuration ---------- */
   var SUPPORTED = [
     { code: "en",    label: "English",    dir: "ltr" },
-    { code: "zh-CN", label: "简体中文",    dir: "ltr" }
+    { code: "zh-CN", label: "简体中文",    dir: "ltr" },
+    { code: "es",    label: "Español",    dir: "ltr" },
+    { code: "fr",    label: "Français",   dir: "ltr" },
+    { code: "de",    label: "Deutsch",    dir: "ltr" },
+    { code: "ja",    label: "日本語",      dir: "ltr" },
+    { code: "ko",    label: "한국어",      dir: "ltr" },
+    { code: "pt",    label: "Português",  dir: "ltr" },
+    { code: "ru",    label: "Русский",    dir: "ltr" },
+    { code: "ar",    label: "العربية",      dir: "rtl" }
   ];
   var DEFAULT_LANG = "en";
   var STORE_KEY = "lac-lang";
   var BASE = "/js/i18n/";
   /* Bumped whenever the dictionaries are regenerated, so returning visitors
    * do not keep an outdated translation cached. */
-  var BUILD = "20261118";
+  var BUILD = "20261126";
 
   /* User config, settable before this script loads:
    *   window.LAC_I18N_CONFIG = { geoip: true, geoipEndpoint: "..." }
@@ -28,7 +36,7 @@
 
   /* Translation units. Mirrors the extractor used to build the dictionaries. */
   var SELECTOR = "h1,h2,h3,h4,h5,h6,p,li,blockquote,figcaption,summary,td,th,dt,dd," +
-    "span.card-tag,span.footer-contact-label,div.feature-label,div.section-label,div.hero-tag," +
+    "span.card-tag,span.footer-contact-label,span.rn-label,span.rn-title,div.feature-label,div.section-label,div.hero-tag," +
     "div.stat-label,div.breadcrumb,div.hero-scroll,div.footer-bottom," +
     "a.card-link,a.btn";
 

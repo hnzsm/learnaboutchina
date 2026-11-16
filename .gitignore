@@ -1,5 +1,7 @@
 # Local tooling / agent working notes — not part of the website
 .trae/
+.trae-html-share-packages/
+debug.log
 
 # OS noise
 Thumbs.db
